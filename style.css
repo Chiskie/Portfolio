@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-    color: #C585B3;
+    color: aqua;
     text-decoration: none;
     cursor: pointer;
 }
@@ -63,13 +63,19 @@ nav li:first-child {
     text-align: center;
 }
 
+nav [class*="fa-"] {
+    font-size: 150%;
+    color: aquamarine;
+
+}
+
 nav a {
     color: white;
     text-decoration: none;
     display: block;
 }
 
-nav a:hover {
+nav a:hover, nav [class*="fa-"]:hover{
     color: magenta;
 
 }
@@ -112,6 +118,7 @@ nav a:hover {
     text-align: center;
     padding: 2rem;
 
+
 }
 
 #contact p {
@@ -124,15 +131,17 @@ nav a:hover {
     color: white;
     font-size: 1rem;
     font-family: 'Oxygen Mono', monospace;
-    background-color: #EA48C0;
+    background-color: magenta;
     padding: .20rem .35rem;
     border-radius: 5%
 }
 
 #contact a:hover {
-    background-color: pink;
+    background-color: #ff1dce;
+    color:white;
     transition: all 0s;
 }
+
 
 .button {
     background-color: magenta;
@@ -142,6 +151,7 @@ nav a:hover {
 
 .button:hover {
     color: white;
+    background-color: #ff1dce;
 }
 
 #footer {
@@ -149,6 +159,16 @@ nav a:hover {
     padding-bottom: 5rem;
     text-align: center;
     padding: 4rem 0;
+
+}
+#footer [class*="fa-"] {
+    font-size: 200%;
+    color: aquamarine;
+
+}
+
+#footer a:hover, #footer [class*="fa-"]:hover{
+    color: #EA48C0;
 
 }
 
